@@ -1,0 +1,16 @@
+id: VOID
+type: BIOME
+# abstract: true
+
+# extends: [ EQ_DEEP_OCEAN ]
+vanilla: minecraft:the_void
+color: 0xff00ff
+
+palette:
+- AIR: 319
+
+terrain:
+  sampler:
+    dimensions: 3
+    type: EXPRESSION
+    expression: y = 0 && x = 0 && z = 0

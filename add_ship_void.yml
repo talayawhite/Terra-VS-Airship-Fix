@@ -1,0 +1,17 @@
+extrusions:
+  - type: SET
+    sampler:
+      type: "EXPRESSION"
+      dimensions: 2
+      expression:
+        if (x < 20000000
+            && x > -20000000
+            && z < 20000000
+            && z > -20000000,
+            0, 1)
+    to:
+      - SELF: 2
+      - VOID: 1
+    range:
+      min: -64
+      max: 320
